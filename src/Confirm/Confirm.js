@@ -13,6 +13,16 @@ import {
 } from "react-bootstrap";
 
 
+function onSubmit () {    
+	window.location.href = "/startcar";
+}
+
+
+function onSubmitBack () {    
+	window.location.href = "/carlist";
+}
+
+
 function Confirm() {
   return (
     <div className="confirm">
@@ -51,7 +61,8 @@ function Confirm() {
             </ListGroup>
             
             <div className="mt-5">
-              <Button variant="success" className="px-5 mt-2">Confirm Booking</Button>
+            <Button variant="danger" style={{marginRight:'2rem'}} className="px-5 mt-2" onClick={onSubmitBack} >Back</Button>
+              <Button variant="success" className="px-5 mt-2" onClick={onSubmit} >Confirm Booking</Button>
             </div>
             
            {/*  <Button className="px-5 mt-2" variant="success" >Confirm</Button>
