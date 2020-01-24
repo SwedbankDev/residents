@@ -2,6 +2,8 @@ import React from 'react';
 import {Switch, Route} from "react-router-dom";
 import Home from "./Home/Home";
 import CarList from "./CarList/CarList";
+import Confirm from "./Confirm/Confirm";
+const Routes =() => {
 
 const Routes =() => {
   return (
@@ -11,6 +13,9 @@ const Routes =() => {
     </Route>
     <Route exact path="/carlist">
     <CarList/>
+    </Route>
+    <Route exact path="/confirm">
+    <Confirm/>
     </Route>
     </Switch>
 
