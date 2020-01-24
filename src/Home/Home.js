@@ -6,11 +6,15 @@ import {Button} from "react-bootstrap";
 function Home() {
   return (
     <div className="home">
+    <div style={{textAlign: "center"}}>
     <h1>Home</h1>
+    </div>
     <div className="date">
     <DatetimeRangePicker />
     </div>
+    <div style={{textAlign: "center"}}>
     <Button as="input" type="submit" value="Submit" />
+    </div> 
     </div>
 
   );

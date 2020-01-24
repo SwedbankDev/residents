@@ -1,11 +1,12 @@
 import React from 'react';
-import {NavDropdown, Nav, Navbar} from "react-bootstrap";
+import {NavDropdown, Nav, Navbar, Image} from "react-bootstrap";
 import "./Navbar.css";
 import { LinkContainer } from "react-router-bootstrap";
+import image from "../Header/hsb.jpg";
 function NavBar() {
   return (
-  <Navbar collapseOnSelect fixed="top" expand="lg" bg="light" variant="light" className="navbar-container">
-  <LinkContainer to="/"><Navbar.Brand >BSF Car Pool</Navbar.Brand></LinkContainer>
+  <Navbar collapseOnSelect fixed="top" expand="lg" variant="dark" className="navbar-container" style={{backgroundColor:"#255D84"}}>
+  <LinkContainer to="/"><Navbar.Brand ><Image thumbnail src={image} style={{maxHeight:"80px", maxWidth: "80px", marginRight:"2vw"}}/>BSF Car Pool</Navbar.Brand></LinkContainer>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
