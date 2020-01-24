@@ -2,6 +2,10 @@ import React from 'react';
 import "./Car.css";
 import {ListGroup, Image, Button} from "react-bootstrap";
 
+function onSubmit () {    
+	window.location.href = "/confirm";
+}
+
 const Car = () => {
   return (
     <ListGroup.Item>
@@ -12,7 +16,7 @@ const Car = () => {
 		<h4 className="Title">Good Car</h4>
 		<p className="Duration">something</p>
 		<div className= "Rent">
-		<Button bsStyle="danger"> Rent 10$</Button>
+		<Button bsStyle="danger" onClick={onSubmit} > Rent 10$</Button>
 		</div>
 		</div>
 

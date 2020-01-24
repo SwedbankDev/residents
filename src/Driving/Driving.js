@@ -8,6 +8,9 @@ const modalstyle = {
 }
 
 const Driving = () => {
+	const onSubmit =() => {
+  window.location.href = "/";
+}
   return (
     <div className="Driving" style={{marginTop:"10vh"}}>
     <Modal.Dialog style={modalstyle} className="modal-wrap">
@@ -19,13 +22,13 @@ const Driving = () => {
   <div>
   <CountdownTimer count={5432} size={30} />
    <h1>In there is maintainace issue Press maintainace Button someone will come and get you</h1>
-   <Button variant="warning"> maintainace</Button>
+   <Button variant="warning" > maintainace</Button>
   </div>
 
 
   </Modal.Body>
   <Modal.Footer>
-    <Button variant="primary" className="modal-body">Return</Button>
+    <Button variant="primary" className="modal-body" onClick={onSubmit} >Return</Button>
   </Modal.Footer>
 </Modal.Dialog>
     </div>
