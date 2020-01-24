@@ -5,6 +5,7 @@ import CarList from "./CarList/CarList";
 import Confirm from "./Confirm/Confirm";
 const Routes =() => {
 
+import Driving from "./Driving/Driving";
 const Routes =() => {
   return (
     <Switch>
@@ -16,6 +17,9 @@ const Routes =() => {
     </Route>
     <Route exact path="/confirm">
     <Confirm/>
+    </Route>
+    <Route exact path="/driving">
+    <Driving/>
     </Route>
     </Switch>
 
