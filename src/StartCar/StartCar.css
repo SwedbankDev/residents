@@ -1,0 +1,13 @@
+.startcar{
+	margin-top: auto;
+}
+
+.qrscanimg {
+	width: 80px;
+	height: auto;
+}
+
+
+.cenersc {display: "flex";
+	align-items: center;
+  }
