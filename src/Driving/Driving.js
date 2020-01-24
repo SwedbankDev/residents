@@ -10,7 +10,6 @@ const modalstyle = {
 const Driving = () => {
   return (
     <div className="Driving" style={{marginTop:"10vh"}}>
-    <h1>Driving</h1>
     <Modal.Dialog style={modalstyle} className="modal-wrap">
   <Modal.Header >
     <Modal.Title>Driving</Modal.Title>
