@@ -6,7 +6,10 @@ import {
   Button, 
   Card,
   Form,
-  Container
+  Container,
+  Row,
+  Col,
+  ListGroup
 } from "react-bootstrap";
 
 
@@ -26,8 +29,33 @@ function Confirm() {
             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
             sunt in culpa qui officia deserunt mollit anim id est laborum.
             </Card.Text>
-            <Button variant="success">Confirm</Button>
-            {/* <Button variant="danger">Cancel</Button> */}
+            <ListGroup variant="flush">
+              <ListGroup.Item>
+                <Row className="mt-2">
+                    <Col>Renting Cost</Col>
+                    <Col>€30</Col>
+                </Row>
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <Row className="mt-2">
+                  <Col>Tax (20%)</Col>
+                  <Col>€6</Col>
+                </Row>
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <Row className="font-weight-bold mt-2">
+                  <Col>Total Cost</Col>
+                  <Col>€36</Col>
+                </Row>
+              </ListGroup.Item>
+            </ListGroup>
+            
+            <div className="mt-5">
+              <Button variant="success" className="px-5 mt-2">Confirm Booking</Button>
+            </div>
+            
+           {/*  <Button className="px-5 mt-2" variant="success" >Confirm</Button>
+            <Button className="px-5 mt-2" variant="danger" className="px-5 mt-2">Cancel</Button> */}
           </Card.Body>
         </Card>
       </Container>
