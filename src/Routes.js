@@ -2,7 +2,7 @@ import React from 'react';
 import {Switch, Route} from "react-router-dom";
 import Home from "./Home/Home";
 import CarList from "./CarList/CarList";
-
+import Driving from "./Driving/Driving";
 const Routes =() => {
   return (
     <Switch>
@@ -11,6 +11,9 @@ const Routes =() => {
     </Route>
     <Route exact path="/carlist">
     <CarList/>
+    </Route>
+    <Route exact path="/driving">
+    <Driving/>
     </Route>
     </Switch>
 
